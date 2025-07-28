@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#main-header {
+  color: #1e90ff;
+}
+
+.color2 {
+  color: #ff6347;
+  font-family: Verdana, sans-serif;
+}
+
+.color3 {
+  color: #32cd32;
+  font-family: Verdana, sans-serif;
+}
+
+.border-list {
+  border: 1px solid black;
+  width: 210px;
+  padding: 10px;
+}
+
+.link-box {
+  width: 200px;
+  height: 50px;
+  border: 2px dashed gray;
+  position: relative;
+  margin-top: 50px;
+}
+
+.link-box a {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+  color: blue;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+
+.red {
+  background-color: red;
+  top: 400px;
+  left: 500px;
+  z-index: 1;
+}
+
+.green {
+  background-color: green;
+  top: 400px;
+  left: 640px;
+  z-index: 2;
+}
+
+.yellow {
+  background-color: yellow;
+  top: 400px;
+  left: 570px;
+  z-index: 3;
+} 
+
+.overflow-div {
+  width: 300px;
+  height: 200px;
+  border: 2px solid gray;
+  overflow: auto;
+  margin-top: 70px;
+}
