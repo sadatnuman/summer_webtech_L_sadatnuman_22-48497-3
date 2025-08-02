@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Change Text Color</title></head>
+<body>
+  <h2>Change Text Color</h2>
+  <input type="text" id="colorInput" placeholder="Enter a color (e.g., red)">
+  <button onclick="changeColor()">Change Color</button>
+  <div id="colorBox" style="margin-top: 10px; font-size: 20px;">This is a sample text.</div>
+
+  <script>
+    function changeColor() {
+      let color = document.getElementById('colorInput').value;
+      document.getElementById('colorBox').style.color = color;
+    }
+  </script>
+</body>
+</html>

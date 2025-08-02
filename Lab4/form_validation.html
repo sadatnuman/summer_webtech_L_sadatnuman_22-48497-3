@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form Validation</title></head>
+<body>
+  <h2>Register</h2>
+  <input type="password" id="password" placeholder="Enter Password"><br>
+  <input type="password" id="confirmPassword" placeholder="Confirm Password"><br>
+  <button onclick="validateForm()">Submit</button>
+  <p id="message"></p>
+
+  <script>
+    function validateForm() {
+      let password = document.getElementById('password').value;
+      let confirmPassword = document.getElementById('confirmPassword').value;
+      let message = document.getElementById('message');
+
+      if (password.length < 6) {
+        message.innerText = "Password is too short (min 6 characters)";
+        message.style.color = "red";
+      } else if (password !== confirmPassword) {
+        message.innerText = "Passwords do not match!";
+        message.style.color = "red";
+      } else {
+        message.innerText = "Password is valid!";
+        message.style.color = "green";
+      }
+    }
+  </script>
+</body>
+</html>
