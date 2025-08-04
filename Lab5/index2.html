@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show and Hide Image</title>
+    <style>
+
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 300px;
+            outline: 5px solid black;
+            outline-offset: -10px;
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Image Show/Hide Example</h2>
+
+    <button onclick="showImage()">Show Image</button>
+    <button onclick="hideImage()">Hide Image</button>
+
+    <div>
+        <img id="myImage" src="Mountain.jpg" alt="Mountain">
+    </div>
+
+    <script>
+        function showImage() {
+            document.getElementById("myImage").style.display = "block";
+        }
+
+        function hideImage() {
+            document.getElementById("myImage").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

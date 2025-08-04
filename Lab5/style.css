@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+  background-color: white;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
